@@ -11,3 +11,851 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html{
+  text-align:center;
+  background-color:white;
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+
+.grid{
+  display:grid;
+  width:100%;
+}
+
+header.banner{
+  display:flex;
+  height:100px;
+  background-color: #231f20;
+  border-bottom: solid 10px  #8E793E;
+}
+
+header img{
+  height:80px;
+  width:80px;
+  grid-column-start:1;
+  grid-column-end:2;
+  align-self:center;
+}
+
+header h1{
+  grid-column-start:2;
+  grid-column-end:6;
+  align-self:center;
+  color: #d4a352;
+  font-weight: bold;
+  font-size: 40px;
+  justify-self: start;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+header nav{
+  height:45px;
+  grid-column-start: 6;
+  grid-column-end: 10;
+  justify-self:start;
+  align-self:center;
+}
+
+nav ul{
+  display: flex;
+  margin:0;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+nav li{
+  display:flex;
+  list-style: none;
+  color: #AEAEAE;
+  font-size: 20px;
+  background-color:#231f20;
+  text-transform:uppercase;
+}
+
+.navbar-link{
+  color: #AEAEAE;
+  text-decoration:none;
+}
+
+.navbar-link:hover{
+  color:blueviolet;
+  text-decoration: none;
+}
+
+.navbar-link:active{
+  color: purple;
+}
+
+/*Home Page*/
+
+#home-page .grid{
+  display:grid;
+  width:100%;
+  height:2000px;
+  grid-template: 110px 700px 120px 300px 120px 300px 120px 300px 110px / repeat(10 , 1fr);
+}
+
+#home-page main{
+  grid-row: 2/3;
+  grid-column: 1/span 10;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  background-image: url("./resources/images/Scales-Background.jpg");
+  background-position:center;
+  height:700px;
+}
+
+#home-page main h2{
+  color:white;
+  font-size: 8em;
+  opacity:.9;
+  margin: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.experience{
+  padding-right: 150px;
+}
+
+.excellence{
+  padding-left: 250px;
+}
+
+
+#practice-preview{
+  display:grid;
+  grid-template: 120px 300px / repeat(10 , 1fr);
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 10;
+}
+
+.header{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 10;
+  background-color: #231f20;
+  border-top: solid 10px #8E793E;
+  border-bottom: solid 10px #AEAEAE;
+  height:100px;
+  align-items:center;
+}
+
+.header h2{
+  color:#AEAEAE;
+  font-size:3rem;
+  text-align:left;
+  margin:22px 25px;
+}
+
+#practice-preview .body{
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 10;
+  height: 100%;
+  width: 100%;
+  background-color:white;
+}
+
+#practice-preview .body ul{
+  margin:0;
+  padding-left:0;
+  height:100%;
+  width:100%;
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+  overflow-x:scroll;
+  
+}
+
+#practice-preview .body ul li{
+  display: inline-block;
+  width:700px;
+  height:175px;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+
+#practice-preview .body figure{
+  background-color: gray;
+  width:175px;
+  height:175px;
+  margin:0;
+  border: solid 5px black;
+}
+
+#practice-preview .body figure figcaption{
+  font-size: 1.5rem;
+}
+
+#practice-preview .body figure img{
+  height: 100px;
+  width: 100px;
+  margin:auto;
+}
+
+#practice-preview .body a{
+  color:black;
+}
+
+#practice-preview .body figure:hover{
+  color: #d4a352;
+  border: solid 5px #d4a352;
+}
+
+/*Margins for each image*/
+
+#practice-preview #divorce-dissolution img{
+  margin-top:5px;
+}
+
+#practice-preview #family-law img{
+  margin-top:20px;
+}
+
+#practice-preview #landlord-tenat img{
+  margin-top:10px;
+}
+
+#practice-preview #discrimination img{
+  margin-top:15px;
+  margin-bottom:-10px;
+  height: 125px;
+  width: 125px;
+}
+
+#practice-preview #sexual-harrassment img{
+  margin-top:10px;
+}
+
+#practice-preview #personal-injury img{
+  margin-top:10px;
+  margin-bottom:-10px;
+  height: 125px;
+  width: 125px;
+}
+
+#practice-preview #unemployment-appeals img{
+  margin-top:5px;
+}
+
+#about-preview{
+  display:grid;
+  grid-template: 120px 300px / repeat(10 , 1fr);
+  grid-row: 5 / span 2;
+  grid-column: 1 / span 10;
+}
+
+#about-preview .header h2{
+  text-align: center;
+}
+
+#about-preview .body{
+  display:grid;
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 10;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#about-preview .body img{
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
+  height: 225px;
+  width: 225px;
+  border: solid 10px black;
+  margin:auto;
+}
+
+#about-preview .body p{
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
+  font-size: 1.5rem;
+}
+
+#about-preview .body p::first-letter{
+  color: #d4a352;
+  float: left;
+  font-family: Georgia;
+  font-size: 100px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+#about-preview .body ul{
+  grid-row: 1 / span 1;
+  grid-column: 3 span 1;
+  margin:auto;
+  font-size: 1.5rem;
+}
+
+#about-preview .body ul li{
+  list-style-type: square;
+  margin-top:20px;
+}
+
+#about-preview .body a{
+  grid-row: 2 / span 1;
+  grid-column: 3 span 1;
+  margin:auto;
+}
+
+#about-preview .body a button{
+  height: 50px;
+  width: 150px;
+  border-radius:25px;
+  font-size: 1.25rem;
+  color: white;
+  background-color: blueviolet;
+}
+
+#about-preview .body a button:hover{
+  cursor: pointer;
+}
+
+
+#about-preview .body p .first-letter{
+  initial-letter: 2;
+}
+
+#contact-preview{
+  display:grid;
+  grid-row: 7 / span 2;
+  grid-column: 1 / span 10;
+  grid-template: 120px 300px / repeat(3, 1fr);
+}
+
+#contact-preview .body{
+  display:grid;
+  grid-row: 2 / span 1;
+  grid-column: 1 /span 10;
+  grid-template: 300px / repeat(2, 1fr)
+}
+
+#contact-preview .body figure{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+#contact-preview .body figure img{
+  height: 100px;
+  width:100px;
+  background-color: #8E793E;
+  border: 10px solid gray;
+}
+
+#contact-preview figure a img:hover{
+  background-color:blueviolet;
+}
+
+#contact-preview figure a img:active{
+  background-color: purple;
+}
+
+#contact-preview figure a figcaption:hover{
+  color:blueviolet;
+}
+
+#contact-preview figure a figcaption:active{
+  color:purple;
+}
+
+#contact-preview .body figure figcaption{
+  font-size: 3rem;
+  background-color: gray;
+  color: black;
+  font-style:italic;
+}
+
+#contact-preview .body figure img,figcaption{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#home-page footer{
+  grid-row: 9 / span 1;
+  grid-column: 1 / span 10;
+}
+
+/*Practice Areas Page*/
+
+#practice-page .grid{
+  height:2940px;
+  grid-template:110px 130px repeat(7, 370px) 110px/ repeat(10, 1fr);
+}
+
+
+#practice-page footer{
+  grid-row:10 / span 1;
+  grid-column: 1 / span 10;
+}
+
+#practice-page ul.practice-areas-shortcut{
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 3;
+  padding-inline-start:0;
+}
+
+#practice-page main{
+  display:grid;
+  grid-row:2 / span 8;
+  grid-column: 1 / span 10;
+  grid-template: 150px repeat(7, 370px) 110px / repeat(7, 1fr);
+}
+
+#practice-page ul.practice-areas-shortcut{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 7;
+  display: flex;
+  height: 100%;
+  justify-content:flex-start;
+  align-items:center;
+  overflow-x:scroll;
+  margin:0;
+}
+
+#practice-page ul.practice-areas-shortcut a li:hover{
+  color: #d4a352;
+  border-color:#d4a352;
+}
+
+ul.practice-areas-shortcut li{
+  list-style: none;
+  width: 160px;
+  height:100px;
+  margin-right: 20px;
+  margin-left: 20px;
+  display:inline-block;
+  font-size: 1.5rem;
+  background-color: gray;
+  color: #231f20;
+  border: solid 5px #231f20;
+  
+}
+
+ul.practice-areas-shortcut li h4{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#practice-page h3{
+  height: 40px;
+  padding:10px 0px;
+  background-color: #231f20;
+  color:#AEAEAE;
+  grid-row: 1 / span 1;
+  font-size: 2rem;
+  margin:0;
+  padding-left: 25px;
+  text-align:left;
+  border-bottom: solid 10px #AEAEAE;
+}
+
+#practice-page p{
+  grid-row: 2 / span 1;
+  font-size: 1.5rem;
+  text-align:left;
+  margin:30px;
+}
+
+#divorce-dissolution-exp{
+  display: grid;
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 7;
+  grid-template: 80px 300px / 1fr;
+}
+
+#divorce-dissolution-exp h3{
+  border-top: solid 10px #8E793E;
+}
+
+#family-law-exp{
+  display: grid;
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 7;
+  grid-template: 70px 300px / 1fr;
+}
+
+#landlord-tenat-exp{
+  display: grid;
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 7;
+  grid-template: 70px 300px / 1fr;
+}
+
+#discrimination-exp{
+  display: grid;
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 7;
+  grid-template: 70px 300px / 1fr;
+}
+
+#sexual-harrassment-exp{
+  display: grid;
+  grid-row: 6 / span 1;
+  grid-column: 1 / span 7;
+  grid-template: 70px 300px / 1fr;
+}
+
+#personal-injury-exp{
+  display: grid;
+  grid-row: 7 / span 1;
+  grid-column: 1 / span 7;
+  grid-template: 70px 300px / 1fr;
+}
+
+#unemployment-appeals-exp{
+  display: grid;
+  grid-row: 8 / span 1;
+  grid-column: 1 / span 7;
+  grid-template: 70px 300px / 1fr;
+}
+
+/*About Page*/
+
+#about-page .grid{
+  height: 1200px;
+  grid-template:110px 1fr 110px / 1fr;
+}
+
+#about-page header{
+  grid-row: 1 / span 1;
+}
+
+#about-page main{
+  display:grid;
+  grid-row: 2 / span 1;
+  grid-template: 70px 500px 60px 400px /  1fr 2fr 1fr;
+}
+
+section.personal{
+  display: grid;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 4;
+  grid-template: 70px 500px / 1fr 2fr 1fr;
+}
+
+section.community{
+  display: grid;
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 3;
+  grid-template: 70px 400px / 2fr 1fr 1fr;
+}
+
+#about-page h2{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 3;
+  height: 50px;
+  border-bottom: solid gray 10px;
+  font-size: 3rem;
+  text-align: left;
+  background-color: #231f20;
+  color:#AEAEAE;
+  margin:0;
+  margin-top:10px;
+  padding-left: 20px;
+  text-align:center;
+}
+
+#about-page section p{
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  margin:0;
+  margin-top:20px;
+  padding:10px;
+}
+
+.personal img{
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1; 
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  padding: auto;
+  border: solid 10px black;
+
+}
+
+.personal ul{
+  grid-row: 2 / span 1;
+  grid-column: 3 / span 1;
+  margin: 0;
+  margin:auto;
+}
+
+.community img{
+  grid-row: 2 / span 1;
+  grid-column: 3 / span 1; 
+  height: 200px;
+  width: 300px;
+  margin: auto;
+  padding: auto;
+  border: solid 10px black;
+}
+
+#about-page .community p{
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.community ul{
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  margin: auto;
+}
+
+#about-page main p, li{
+  font-size: 1.5rem;
+}
+
+#about-page main p::first-letter{
+  color: #d4a352;
+  float: left;
+  font-family: Georgia;
+  font-size: 100px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+#about-page footer{
+  grid-row: 3 / span 1;
+}
+
+
+/*Contact Page*/
+
+#contact-page body{
+  height:100%;
+}
+
+#contact-page .grid{
+  height:100%;
+  grid-template: 110px 1fr 90px/ repeat(10 , 1fr)
+}
+
+main.contact{
+  grid-column-start: 1;
+  grid-column-end:11;
+  grid-row-start:2;
+  grid-row-end:3;
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template: 3fr 1fr/ 3fr 1fr;
+}
+
+.contact-box{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  height:100%;
+  grid-column-start:1;
+  grid-row-start: 1;
+  margin-left:25px;
+}
+
+.contact-box h2{
+  color:#AEAEAE;
+  background-color:#231f20;
+  text-align:left;
+  font-size: 2rem;
+  padding-left:10px;
+  margin-top:0;
+
+}
+.contact-box ul{
+  width:1000px;
+  flex-direction:column;
+  justify-content:center;
+  margin:0;
+}
+
+.contact-box figure{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.contact-box figure img{
+  height: 100px;
+  width:100px;
+  background-color: #8E793E;
+  border: 10px solid gray;
+}
+
+.contact-box figcaption{
+  font-size: 3rem;
+  background-color: gray;
+  color: black;
+  font-style:italic;
+}
+
+#contact-page #phone-number figcaption:hover{
+  cursor: default;
+}
+
+#contact-page #email figcaption:hover{
+  color:blueviolet;
+}
+
+#contact-page #email figcaption:active{
+  color:purple;
+}
+
+#contact-page #email img:hover{
+  background-color:blueviolet;
+}
+
+#contact-page #email img:active{
+  background-color:purple;
+}
+
+#contact-page #facebook figcaption:hover{
+  color:blueviolet;
+}
+
+#contact-page #facebook figcaption:active{
+  color:purple;
+}
+
+#contact-page #facebook img:hover{
+  background-color:blueviolet;
+}
+
+#contact-page #facebook img:active{
+  background-color:purple;
+}
+
+
+.law-image{
+  width:75%;
+  height: 90%;
+  background-color:gray;
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
+  margin:auto;
+  background-image: url(./resources/images/Filler-Vertical-Image.jpg);
+  background-position:center;
+}
+
+.feedback-box{
+  height:140px;
+  background-color:#AEAEAE;
+  width: 75%;
+  margin:auto;
+}
+
+.feedback-box h2{
+  color:#AEAEAE;
+  background-color:#231f20;
+  text-align:center;
+  font-size: 1.75rem;
+  padding-left:10px;
+  margin-top:0;
+  margin:0;
+}
+
+.feedback-box .body{
+  height: 100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.feedback-box form{
+  display:flex;
+  margin-top:30px;
+  height: 110px;
+}
+
+.feedback-box input{
+  margin-bottom:10px;
+}
+
+.feedback-box form, input, textarea{
+  display: inline-block;
+}
+
+.feedback-box input #submit-button{
+  margin-bottom: 10px;
+}
+
+#contact-page footer{
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 10;
+  height: 80px;
+}
+
+#contact-page footer ul.footer-pages{
+  display: flex;
+  justify-content:space-evenly;
+  padding-right:80px;
+  width:600px;
+}
+
+#contact-page footer ul.footer-pages li{
+  display: inline-flex;
+}
+/*Footer*/
+
+footer{
+  font-size: 1.25rem;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  width:100%;
+  background-color:#231f20;
+  height:100%;
+  color:#d4a352;
+  border-top: solid 10px  #8E793E;
+}
+
+footer ul,p{
+  display:inline-block;
+}
+
+footer p{
+  margin-left:10px;
+}
+
+footer ul li{
+  list-style:none;
+}
+
+footer ul li a:hover{
+  color:#d4a352;
+}
+
+footer ul li a:active{
+  color:blueviolet;
+}
+
+footer ul.footer-pages{
+  margin-right:10px;
+}
+
+footer ul.footer-contact-info{
+  display: flex;
+  justify-content:space-evenly;
+  padding-right:80px;
+  width:600px;
+}
+
+footer ul.footer-contact-info li{
+  display: inline-flex;
+}

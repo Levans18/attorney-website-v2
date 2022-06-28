@@ -1,43 +1,39 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Navigation() {
+function NavBar() {
   return (
-    <div className="navigation">
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <div className="container">
-          <NavLink className="navbar-brand" to="/">
-            React Multi-Page Website
-          </NavLink>
-          <div>
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/">
-                  Home
-                  <span className="sr-only">(current)</span>
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/about">
-                  Practice
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
-                  About Me
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/blog">
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <header className="banner">
+              <img src="../resources/images/Scale-Logo.png" alt="filler image atm"/>
+              <NavLink className="navbar-link title" to="/">
+                Todd Evans Attorney at Law
+              </NavLink>
+              <nav>
+                <ul>
+                    <li>
+                      <NavLink className="navbar-link" to="/">
+                          Home
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink className="navbar-link" to="/practice">
+                        Practice Areas
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink className="navbar-link" to="/about">
+                            About Todd W. Evans
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink className="navbar-link" to="/contact">
+                            Contact
+                      </NavLink>
+                    </li>
+                </ul>
+          </nav>
+      </header>
   );
 }
 
-export default Navigation;
+export default NavBar;

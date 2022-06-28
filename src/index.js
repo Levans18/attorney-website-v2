@@ -3,22 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import  About  from "./components/About"
-import  Contact  from "./components/Contact"
-import  Home  from "./components/Home"
-import  Navigation  from "./components/NavBar"
+import  About  from "./pages/About"
+import  Contact  from "./pages/Contact"
+import  Home  from "./pages/Home"
+import  NavBar  from "./components/NavBar"
 import  Footer  from "./components/Footer"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Router>
-      <Navigation />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-
       </Routes>
     <Footer />
     </Router>
