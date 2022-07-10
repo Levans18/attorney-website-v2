@@ -1,0 +1,71 @@
+header.banner{
+    grid-column: 1 / span 2;
+    display:flex;
+    justify-content: space-between;
+    height:100px;
+    background-color: #231f20;
+    border-bottom: solid 10px  #8E793E;
+  }
+  
+  header img{
+    height:80px;
+    width:80px;
+    grid-column-start:1;
+    grid-column-end:2;
+    align-self:center;
+  }
+
+  .header-hero{
+    display: flex;
+  }
+  
+  header .navbar-link-home{
+    grid-column-start:2;
+    grid-column-end:6;
+    align-self:center;
+    color: #d4a352;
+    font-weight: bold;
+    font-size: 40px;
+    justify-self: start;
+    text-decoration:none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  header nav{
+    height:45px;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    justify-self:start;
+    align-self:center;
+  }
+  
+  nav ul{
+    right: 10px;
+    display: flex;
+    margin:0;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  
+  nav li{
+    display:flex;
+    list-style: none;
+    color: #AEAEAE;
+    font-size: 20px;
+    background-color:#231f20;
+    text-transform:uppercase;
+  }
+  
+  .navbar-link{
+    color: #AEAEAE;
+    text-decoration:none;
+  }
+  
+  .navbar-link:hover{
+    color:blueviolet;
+    text-decoration: none;
+  }
+  
+  .navbar-link:active{
+    color: purple;
+  }
