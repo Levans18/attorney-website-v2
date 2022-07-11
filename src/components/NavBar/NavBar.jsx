@@ -16,17 +16,17 @@ function NavBar() {
       <nav>
         <ul>
             <li>
-              <NavLink className="navbar-link" to="/">
+              <NavLink className="navbar-link" to="/" activeclassname="active">
                   Home
               </NavLink>
             </li>
             <li>
-              <NavLink className="navbar-link" to="/practice">
+              <NavLink className="navbar-link practice-areas" to="/practice" activeclassname="active">
                 Practice Areas
               </NavLink>
             </li>
             <li>
-              <NavLink className="navbar-link" to="/contact">
+              <NavLink className="navbar-link contact" to="/contact" activeclassname="active">
                     Contact
               </NavLink>
             </li>

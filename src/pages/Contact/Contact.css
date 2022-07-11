@@ -1,12 +1,5 @@
 /*Contact Page*/
 
-
-
-#contact-page .grid{
-
-    grid-template: 110px 1fr 90px/ repeat(10 , 1fr)
-  }
-  
   main.contact{
     grid-column-start: 1;
     grid-column-end:11;
@@ -150,21 +143,4 @@
   
   .feedback-box input #submit-button{
     margin-bottom: 10px;
-  }
-  
-  #contact-page footer{
-    grid-row: 3 / span 1;
-    grid-column: 1 / span 10;
-    height: 80px;
-  }
-  
-  #contact-page footer ul.footer-pages{
-    display: flex;
-    justify-content:space-evenly;
-    padding-right:80px;
-    width:600px;
-  }
-  
-  #contact-page footer ul.footer-pages li{
-    display: inline-flex;
   }
