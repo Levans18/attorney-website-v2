@@ -8,6 +8,7 @@ import  Contact  from "./pages/Contact/Contact"
 import  Home  from "./pages/Home/Home"
 import  NavBar  from "./components/NavBar/NavBar"
 import  Footer  from "./components/Footer/Footer"
+import DivorceDissolution from "./pages/Practice/PracticeAreas/DivorceDissolution.jsx"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +17,9 @@ root.render(
       <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/practice" element={<Practice />} />
+          <Route path="/practice" element={<Practice />} >
+            <Route path="/practice/Divorce-Dissolution" element={<DivorceDissolution/>}/>
+          </Route>
           <Route path="/contact" element={<Contact />} />
         </Routes>
       <Footer />

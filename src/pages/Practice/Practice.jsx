@@ -1,10 +1,38 @@
 import React from "react";
 import './Practice.css'
+import {
+    Link,
+    Outlet,
+} from "react-router-dom"
 
 function Practice() {
   return (
     <main>
-        <ul className="practice-areas-shortcut">
+        <ul className="practice-areas">
+            <li>
+                <Link className="navbar-link" to={"Divorce-Dissolution"} activeclassname="active">Divorce & Dissolution</Link>
+            </li>
+            <li>
+                <Link className="navbar-link" to={"Family-Law"} activeclassname="active">Family Law</Link>
+            </li>
+            <li>
+                <Link className="navbar-link" to={"landlordTenant"} activeclassname="active">Landlord & Tenant</Link>
+            </li>
+            <li>
+                <Link className="navbar-link" to={"Discrimination"} activeclassname="active">Discrimination</Link>
+            </li>
+            <li>
+                <Link className="navbar-link" to={"sexualHarrassment"} activeclassname="active">Sexual Harrassment</Link>
+            </li>
+            <li>
+                <Link className="navbar-link" to={"personalInjury"} activeclassname="active">Personal Injury</Link>
+            </li>
+            <li>
+                <Link className="navbar-link" to={"unemploymentAppeals"} activeclassname="active">Unemployment Appeals</Link>
+            </li>
+        </ul>
+        <Outlet />
+        {/* <ul className="practice-areas-shortcut">
             <a href="#divorce-dissolution-exp">
                 <li>
                     <h4>Divorce & Dissolution</h4>
@@ -89,7 +117,7 @@ function Practice() {
                 in sed, ius bonorum propriae democritum ea, te eam principes persequeris adversarium.
                 Te case putant vix, illum facilisi similique mel at. Soluta honestatis vix an, iuvaret adversarium mea id,
                   aeterno feugait ea usu. propriae democritum ea, te eam principes persequeris ei vel diam saepe percipitur...</p>
-        </section>
+        </section> */}
   </main>
   );
 }
