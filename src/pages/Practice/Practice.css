@@ -5,37 +5,50 @@ main{
   flex-direction: column;
 }
 
-
-
 ul.practice-areas{
   border-top:#AEAEAE 10px solid;
   display: flex;
   margin:0;
   padding:0;
   flex-direction: row;
+  width: 100%;
+  background-color:hsla(0, 0%, 68%, .4);
 }
 
-li{
+li.practice-areas{
   display:flex;
   list-style: none;
-  color: #AEAEAE;
+  color: black;
   font-size: 20px;
   text-transform:uppercase;
 }
 
-.navbar-link{
+.practice-navbar-NavLink{
   padding: 5px;
-  color: white;
+  color: black;
   text-decoration:none;
 }
 
-.navbar-link:hover{
-  color: #AEAEAE;
+.practice-navbar-NavLink:hover{
   text-decoration: none;
+  color: black;
 }
 
-.active.navbar-link{
-  background-color:#8E793E;
+.active.practice-navbar-NavLink{
+  background-color: hsla(0, 0%, 68%,1);
   color:black;
+}
 
+section.left, section.right{
+  height: 300px;
+  width: 50%;
+}
+
+.practice-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.initial-shade{
+  background-color: #AEAEAE;
 }

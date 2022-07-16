@@ -67,8 +67,7 @@ header.banner{
 
   .active.navbar-link{
     background-color:#8E793E;
-    color:black;
-    font-weight: bold;
+    color: black;
     transform: scaleY(1);
     transform-origin: bottom center;
     transition: transform 0.3s;

@@ -1,34 +1,35 @@
 import React from "react";
 import './Practice.css'
 import {
-    Link,
+    NavLink,
     Outlet,
 } from "react-router-dom"
+import DivorceDissolution from "./PracticeAreas/DivorceDissolution";
 
 function Practice() {
   return (
     <main>
         <ul className="practice-areas">
-            <li>
-                <Link className="navbar-link" to={"Divorce-Dissolution"} activeclassname="active">Divorce & Dissolution</Link>
+            <li className="practice-areas">
+                <NavLink className="practice-navbar-NavLink" to={"Divorce-Dissolution"} activeclassname="active practice-navbar-NavLink">Divorce & Dissolution</NavLink>
             </li>
-            <li>
-                <Link className="navbar-link" to={"Family-Law"} activeclassname="active">Family Law</Link>
+            <li className="practice-areas">
+                <NavLink className="practice-navbar-NavLink" to={"Family-Law"} activeclassname="active practice-navbar-NavLink">Family Law</NavLink>
             </li>
-            <li>
-                <Link className="navbar-link" to={"landlordTenant"} activeclassname="active">Landlord & Tenant</Link>
+            <li className="practice-areas">
+                <NavLink className="practice-navbar-NavLink" to={"Landlord-Tenant"} activeclassname="active practice-navbar-NavLink">Landlord & Tenant</NavLink>
             </li>
-            <li>
-                <Link className="navbar-link" to={"Discrimination"} activeclassname="active">Discrimination</Link>
+            <li className="practice-areas">
+                <NavLink className="practice-navbar-NavLink" to={"Discrimination"} activeclassname="active practice-navbar-NavLink">Discrimination</NavLink>
             </li>
-            <li>
-                <Link className="navbar-link" to={"sexualHarrassment"} activeclassname="active">Sexual Harrassment</Link>
+            <li className="practice-areas">
+                <NavLink className="practice-navbar-NavLink" to={"Sexual-Harrassment"} activeclassname="active practice-navbar-NavLink">Sexual Harrassment</NavLink>
             </li>
-            <li>
-                <Link className="navbar-link" to={"personalInjury"} activeclassname="active">Personal Injury</Link>
+            <li className="practice-areas">
+                <NavLink className="practice-navbar-NavLink" to={"Personal-Injury"} activeclassname="active practice-navbar-NavLink">Personal Injury</NavLink>
             </li>
-            <li>
-                <Link className="navbar-link" to={"unemploymentAppeals"} activeclassname="active">Unemployment Appeals</Link>
+            <li className="practice-areas">
+                <NavLink className="practice-navbar-NavLink" to={"Unemployment-Appeals"} activeclassname="active practice-navbar-NavLink">Unemployment Appeals</NavLink>
             </li>
         </ul>
         <Outlet />
