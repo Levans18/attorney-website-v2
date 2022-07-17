@@ -8,7 +8,7 @@ import DivorceDissolution from "./PracticeAreas/DivorceDissolution";
 
 function Practice() {
   return (
-    <main>
+    <main id = "practice-page">
         <ul className="practice-areas">
             <li className="practice-areas">
                 <NavLink className="practice-navbar-NavLink" to={"Divorce-Dissolution"} activeclassname="active practice-navbar-NavLink">Divorce & Dissolution</NavLink>

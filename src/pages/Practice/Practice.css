@@ -1,6 +1,7 @@
 /*Practice Areas Page*/
 
 main{
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -31,6 +32,7 @@ li.practice-areas{
 
 .practice-navbar-NavLink:hover{
   text-decoration: none;
+  background-color: hsla(0, 0%, 68%,.6);
   color: black;
 }
 
@@ -40,13 +42,18 @@ li.practice-areas{
 }
 
 section.left, section.right{
-  height: 300px;
+  height: 100%;
   width: 50%;
+}
+
+section.right{
+  background-color:hsla(0, 0%, 68%, .2);
 }
 
 .practice-container{
   display: flex;
   flex-direction: row;
+  height: 100%;
 }
 
 .initial-shade{

@@ -7,19 +7,22 @@ footer{
     align-items: center;
     width:100%;
     background-color:#231f20;
-    height: 300px;
+    border-top: 10px solid #8E793E;
+    height: 70px;
     color:#d4a352;
-    /*border-top: solid 10px  #8E793E;*/
+    bottom: 0;
   }
-  
-  footer ul,p{
-    display:inline-block;
-  }
-  
+
   footer p{
     margin-left:10px;
+    padding:none;
   }
-  
+
+  footer ul{
+    height: 100%;
+    margin: 0;
+  }
+
   footer ul li{
     list-style:none;
   }
@@ -33,7 +36,8 @@ footer{
   }
   
   footer ul.footer-pages{
-    margin-right:10px;
+    display: flex;
+    margin-right:20px;
   }
   
   footer ul.footer-contact-info{

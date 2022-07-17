@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation} from "react-router-dom";
 import  Practice  from "./pages/Practice/Practice"
 import  Contact  from "./pages/Contact/Contact"
 import  Home  from "./pages/Home/Home"

@@ -3,7 +3,7 @@ import './Contact.css'
 
 function Contact() {
   return (
-    <main className="contact">
+    <main id="contact-page">
       <div className="contact-box">
         <figure id="phone-number">
           <img src={require("./images/Phone-icon.png")} title="Phone Icon" alt="Phone Icon" />
@@ -20,7 +20,7 @@ function Contact() {
           </div>
           <aside className="law-image">
           </aside>
-          </main>
+      </main>
     );
   }
   export default Contact;
