@@ -9,11 +9,11 @@ main{
 ul.practice-areas{
   border-top:#AEAEAE 10px solid;
   display: flex;
+  justify-content: center;
   margin:0;
   padding:0;
   flex-direction: row;
   width: 100%;
-  background-color:hsla(0, 0%, 68%, .4);
 }
 
 li.practice-areas{
@@ -21,7 +21,11 @@ li.practice-areas{
   list-style: none;
   color: black;
   font-size: 20px;
+  background-color:hsla(0, 0%, 68%, .4);
   text-transform:uppercase;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .practice-navbar-NavLink{
@@ -43,17 +47,22 @@ li.practice-areas{
 
 section.left, section.right{
   height: 100%;
-  width: 50%;
+}
+
+section.left{
+  width: 65%;
 }
 
 section.right{
   background-color:hsla(0, 0%, 68%, .2);
+  width: 35%;
 }
 
 .practice-container{
   display: flex;
   flex-direction: row;
   height: 100%;
+  margin: 10px;
 }
 
 .initial-shade{
