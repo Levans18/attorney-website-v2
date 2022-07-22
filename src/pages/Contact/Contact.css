@@ -34,26 +34,35 @@
     display: flex;
     align-items: center;
     justify-content:center;
+    margin: 10px;
   }
   
-  .contact-box figure img{
+  .contact-box figure a img, #phone-number img{
     height: 100px;
-    width:100px;
+    width: 100px;
     background-color: #8E793E;
-    border: 10px solid gray;
+    border: 10px solid #231f20;
+  }
+
+
+  #facebook a img{
+    border: 10px solid #231f20;
   }
   
-  .contact-box figcaption{
+  .contact-box figure figcaption{
     font-size: 3rem;
-    background-color: gray;
+    background-color: #AEAEAE;
     color: black;
     font-style:italic;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   #contact-page #phone-number figcaption:hover{
     cursor: default;
   }
   
+ 
   #contact-page #email figcaption:hover{
     color:blueviolet;
   }
@@ -85,7 +94,6 @@
   #contact-page #facebook img:active{
     background-color:purple;
   }
-  
   
   .law-image{
     width:75%;

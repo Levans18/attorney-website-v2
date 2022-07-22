@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 function Footer() {
   return (
     <footer>
-        <p>© LEvans Dev</p>
+        <p id="copyright-signature">© LEvans Dev</p>
         <ul className="footer-contact-info">
           <li>
               <a href="Contact.html">Email</a>

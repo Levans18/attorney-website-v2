@@ -13,9 +13,10 @@ footer{
     bottom: 0;
   }
 
-  footer p{
+  p#copyright-signature{
+    margin: 0;
     margin-left:10px;
-    padding:none;
+    padding:0;
   }
 
   footer ul{
@@ -23,7 +24,18 @@ footer{
     margin: 0;
   }
 
-  footer ul li{
+  footer ul.footer-contact-info li{
+    display: flex;
+    align-items:center;
+    height: 100%;
+  }
+
+  footer ul li {
+    list-style: none;
+  }
+
+  footer ul.footer-contact-info li a{
+    color: white;
     list-style:none;
   }
   
@@ -48,5 +60,5 @@ footer{
   }
   
   footer ul.footer-contact-info li{
-    display: inline-flex;
+    display: flex;
   }
