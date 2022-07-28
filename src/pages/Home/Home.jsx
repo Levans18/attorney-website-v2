@@ -1,11 +1,11 @@
 import React from "react";
 import './Home.css';
+import SlideShow from "../../components/SlideShow/SlideShow";
 
 function Home() {
   return (
     <><main id="home-page">
-        <section className="banner" id="main-slider">
-        </section>
+        <SlideShow/>
         <section id="about-preview">
             <div className="body">
                 <div className="img-container">
@@ -16,7 +16,10 @@ function Home() {
                     in sed, ius bonorum propriae democritum ea, te eam principes persequeris adversarium.
                     Te case putant vix, illum facilisi similique mel at. Soluta honestatis vix an, iuvaret adversarium mea id,
                     aeterno feugait ea usu. propriae democritum ea, te eam principes persequeris ei vel diam saepe percipitur...</p>
-                <a href="About.html"><button type="button">Learn More</button></a>
+                    <div className="backstory-button-container">
+                    <a href="About.html"><button type="button">Practice Areas</button></a>
+                    <a href="About.html"><button type="button">Contact Me</button></a>
+                    </div>
                 </div>
             </div>
         </section>
