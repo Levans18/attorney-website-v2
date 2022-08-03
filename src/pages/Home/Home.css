@@ -39,7 +39,8 @@ main#home-page{
   #about-preview{
     grid-row: 2 / span 1;
     grid-column: 1 / span 10;
-    border-top:#231f20 solid 50px;
+    border-top:hsl(345, 6%, 13%) solid 50px;
+    border-bottom: hsl(345, 6%, 13%) solid 25px;
   }
   
   #about-preview .body{
@@ -48,21 +49,17 @@ main#home-page{
   }
 
   #todd-img{
-    height: 600px;
-    width:550px;
+    height: 100%;
+    width: 100%;
     border: 50px solid hsl(345, 6%, 13%, .7);
-  }
-
-  .img-container{
-    width: calc(40%);
-    border-left:#231f20 50px solid;
   }
 
   .backstory-container{
     width: 60%;
+    border-right: 50px solid hsl(345, 6%, 13%);
   }
 
-  .img-container, .backstory-container{
+  .img-container{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -133,19 +130,23 @@ main#home-page{
   }
   
   .header{
+    display: flex;
     grid-row: 1 / span 1;
     grid-column: 1 / span 10;
     background-color: #231f20;
     border-bottom: solid 10px #AEAEAE;
     height:100px;
-    align-items:center;
   }
   
   .header h2{
-    color:#AEAEAE;
+    background-color:#AEAEAE;
+    color:black;
     font-size:3rem;
-    text-align:center;
-    margin:22px 25px;
+    margin-top: auto;
+    padding: 5px 15px;
+    margin-left: 50px;
+    margin-bottom: 0;
+    display: inline;
   }
   
   #practice-preview .body{

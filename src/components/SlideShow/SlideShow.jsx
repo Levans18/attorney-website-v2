@@ -2,32 +2,30 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import "./SlideShow.css"
+import $ from 'jquery';
 
-const SlideShow = () => {
-    const images = [
-        "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-        "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
-        "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-    ];
+const SlideShow = () => { 
 
     return (
-        <Slide>
-            <div className="each-slide-effect">
-                <div style={{ 'backgroundImage': `url(${images[0]})` }}>
-                    <span>Slide 1</span>
+        <div className="Bottom-Border">
+            <Slide>
+                <div className="each-slide-effect">
+                    <div id="first-slide">
+                        <span>Commited to Your Cause</span>
+                    </div>
                 </div>
-            </div>
-            <div className="each-slide-effect">
-                <div style={{ 'backgroundImage': `url(${images[1]})` }}>
-                    <span>Slide 2</span>
+                <div className="each-slide-effect">
+                    <div id="second-slide">
+                        <span>Over 25 Years of Experience</span>
+                    </div>
                 </div>
-            </div>
-            <div className="each-slide-effect">
-                <div style={{ 'backgroundImage': `url(${images[2]})` }}>
-                    <span>Slide 3</span>
+                <div className="each-slide-effect">
+                    <div id="third-slide">
+                        <span>Aggresive Representation</span>
+                    </div>
                 </div>
-            </div>
-        </Slide>
+            </Slide>
+        </div>
     );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import './Footer.css'
 import {NavLink} from "react-router-dom";
 
-function Footer() {
+function ShortFooter() {
   return (
     <footer>
         <p id="copyright-signature">© LEvans Dev</p>
@@ -38,4 +38,3 @@ function Footer() {
   );
 }
 
-export default Footer;
