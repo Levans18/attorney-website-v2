@@ -3,6 +3,7 @@
   main#contact-page{
     display:grid;
     grid-template: 1fr/ 2fr 1fr;
+    min-height: 550px;
   }
   
   .contact-box{
