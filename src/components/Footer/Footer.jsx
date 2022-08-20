@@ -63,6 +63,7 @@ function Footer() {
             </li>
         </ul> 
         <ul className="footer-location-info">
+            <h3>Location</h3>
             <li>
                 <img src={require("./images/Stark-County.png")} />
             </li>
@@ -70,7 +71,7 @@ function Footer() {
                 Serving Stark and surrounding counties.
             </p>
         </ul>
-        <span id="copyright-signature">© LEvans Dev</span>
+        <span id="copyright-signature">©LEvans18Dev</span>
     </footer>
   );
 }
