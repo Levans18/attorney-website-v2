@@ -1,17 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { ReactComponent as Logo} from "./images/Header-Hero.svg";
 import './NavBar.css';
 
 function NavBar() {
   return (
     <header className="banner">
       <div className="header-hero">    
-        <img src={require("./images/Scale-Logo.png")} alt="filler atm"/>
-        <h1>
-          <NavLink className="navbar-link-home title" to="/">
-            Todd Evans Attorney at Law
-          </NavLink>
-        </h1>
+        <Logo id="TWE-Logo"/>
       </div>  
       <nav>
         <ul>

@@ -13,6 +13,9 @@ header.banner{
     align-self:center;
   }
 
+  #TWE-Logo{
+  }
+
   .header-hero{
     display: flex;
   }
@@ -68,3 +71,4 @@ header.banner{
     transform-origin: bottom center;
     transition: transform 0.3s;
   }
+
