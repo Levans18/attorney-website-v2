@@ -1,7 +1,6 @@
 /*Practice Areas Page*/
 
 main#Practice-Page{
-  height: 550px;
   display: flex;
   flex-direction: column;
 }
