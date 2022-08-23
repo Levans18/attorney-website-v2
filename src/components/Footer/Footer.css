@@ -44,8 +44,13 @@ footer ul.footer-contact-info li a{
   color: #AEAEAE !important;
 }
 
+footer ul li a:hover{
+  color:blueviolet !important;
+  text-decoration: none;
+}
+
 footer ul li a:active{
-  color:blueviolet;
+  color: purple !important;
 }
 
 .footer-location-info{

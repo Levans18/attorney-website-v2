@@ -6,8 +6,8 @@ import './NavBar.css';
 function NavBar() {
   return (
     <header className="banner">
-      <div className="header-hero">    
-        <Logo id="TWE-Logo"/>
+      <div className="header-hero">
+        <img src={require("./images/Header-Hero.png")} id="TWE-Logo"/>   
       </div>  
       <nav>
         <ul>
