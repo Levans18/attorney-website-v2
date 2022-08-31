@@ -71,7 +71,6 @@ function Footer() {
                 Serving Stark and surrounding counties.
             </p>
         </ul>
-        <span id="copyright-signature">©LEvans18Dev</span>
     </footer>
   );
 }

@@ -16,7 +16,8 @@ footer ul{
   height: 100%;
   display:flex;
   flex-direction: column;
-  padding: 50px;
+  margin-bottom: 0;
+  height: 275px;
 }
 
 footer ul h3{
@@ -54,7 +55,14 @@ footer ul li a:active{
 }
 
 .footer-location-info{
+  width: 375px;
+  height: 275px;
   margin-left: auto;
+  padding-right: 0;
+}
+
+.footer-location-info li{
+  width: fit-content;
 }
 
 .footer-location-info img{
@@ -65,12 +73,12 @@ footer ul li a:active{
   width: 60%;
 }
 
-#copyright-signature{
+/* #copyright-signature{
   font-size: 1rem;
   position: absolute;
   float: right;
   margin-left: 91%;
   margin-top: 300px;
   color:#AEAEAE;
-}
+} */
 
