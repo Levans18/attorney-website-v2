@@ -3,22 +3,17 @@ import './Home.css';
 import SlideShow from "../../components/SlideShow/SlideShow";
 import {Link} from "react-router-dom";
 import $ from 'jquery';
+import {AwesomeButton} from "react-awesome-button";
+import { AwesomeButtonSocial } from 'react-awesome-button'
+import "react-awesome-button/dist/styles.css";
 
 function Home() {
-    let winWidth = window.innerWidth;
-    let imgWidth = .40;
-    const imgContainerStyle = {
-        height: winWidth * imgWidth,
-        width: '40%',
-        borderLeft: '#231f20 50px solid',
-    }
-
   return (
     <><main id="home-page">
         <SlideShow/>
         <section id="about-preview">
             <div className="body">
-                <div className="img-container" style={imgContainerStyle}>
+                <div className="img-container">
                     <img src={require("./images/Todd-W-Evans.jpg")} alt="Todd W. Evans" title="Picture of Todd W. Evans" id="todd-img"/>
                 </div>
                 <div className="backstory-container">
@@ -27,8 +22,9 @@ function Home() {
                     Te case putant vix, illum facilisi similique mel at. Soluta honestatis vix an, iuvaret adversarium mea id,
                     aeterno feugait ea usu. propriae democritum ea, te eam principes persequeris ei vel diam saepe percipitur...</p>
                     <div className="backstory-button-container">
-                    <a href="About.html"><button type="button">Practice Areas</button></a>
-                    <a href="About.html"><button type="button">Contact Me</button></a>
+                        <AwesomeButtonSocial type="facebook" url="https://www.facebook.com/twelaw329/">twelaw329</AwesomeButtonSocial>
+                        <AwesomeButtonSocial type="whatsapp">330-430-9300</AwesomeButtonSocial>
+                        <AwesomeButton>Contact Page</AwesomeButton>
                     </div>
                 </div>
             </div>

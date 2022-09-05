@@ -5,6 +5,9 @@ import {
     Outlet,
 } from "react-router-dom"
 import DivorceDissolution from "./PracticeAreas/DivorceDissolution";
+import {AwesomeButton} from "react-awesome-button";
+import { AwesomeButtonSocial } from 'react-awesome-button'
+
 
 function Practice() {
   return (
@@ -52,7 +55,7 @@ function Practice() {
                 <textarea name="Contact-Message" rows="7" cols="30">
                 </textarea>
                 <br/>
-                <button type="submit" value="Submit">Send</button>
+                <AwesomeButton value="Submit">Send</AwesomeButton>
                 </form> 
              </section>
         </div>

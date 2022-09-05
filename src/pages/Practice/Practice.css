@@ -55,7 +55,6 @@ section.left{
 section.right{
   display: flex;
   flex-direction: column;
-  background-color:hsla(0, 0%, 68%, .2);
   width: 30%;
   height: 90%;
   border: 1px solid black;
@@ -80,6 +79,10 @@ div .practice-container{
   border-bottom: 1px solid black;
 }
 
+.right button{
+  width: 120px
+}
+
 textarea{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -90,16 +93,4 @@ input{
   margin-left: 2px;
 }
 
-.right button{
-  height: 50px;
-  width: 150px;
-  margin-top:15px;
-  border-radius:25px;
-  font-size: 1.25rem;
-  color: white;
-  background-color: blueviolet;
-}
 
-.right button:hover{
-  cursor: pointer;
-}
