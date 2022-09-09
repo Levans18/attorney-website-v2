@@ -1,41 +1,4 @@
-main#home-page{
-    width:100%;
-  }
-  
-  #main-slider{
-    grid-row: 1/ span 1;
-    grid-column: 1/span 10;
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-content:center;
-    background-position:40% 0%;
-    background-size: cover;
-    height: 700px;
-    border-bottom: 10px solid #8E793E;
-  }
-  
-  #main-slider h2{
-    color:white;
-    font-size: 8em;
-    opacity:.9;
-    margin: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
-  }
-  
-  .experience{
-    padding-right: 150px;
-  }
-  
-  .excellence{
-    padding-left: 250px;
-  }
-  
-  
-  
-  #about-preview{
+#about-preview{
     display:flex;
     height: 550px;
     border-top:hsl(345, 6%, 13%) solid 50px;
@@ -62,19 +25,20 @@ main#home-page{
 
   .backstory-container{
     width: 60%;
+    margin-top: 50px;
     height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 20px;
   }
 
   .backstory-button-container{
-    margin-top: 50px;
     padding-right: 20px;
     width: 100%;
     display:flex;
     justify-content: center;
+    margin-bottom: 20px;
   }
 
   .img-container{
@@ -85,7 +49,6 @@ main#home-page{
   }
   
   #about-preview .body p{
-    margin-top: 50px;
     grid-row: 1 / span 2;
     grid-column: 2 / span 2;
     font-size: 1.5rem;
@@ -115,30 +78,6 @@ main#home-page{
     grid-column: 3 span 1;
     margin:auto;
     font-size: 1.5rem;
-  }
-  
-  #about-preview .body ul li{
-    list-style-type: square;
-    margin-top:20px;
-  }
-  
-  #about-preview .body a{
-    grid-row: 2 / span 1;
-    grid-column: 3/ span 1;
-    margin: auto;
-  }
-  
-  #about-preview .body a button{
-    height: 50px;
-    width: 150px;
-    border-radius:25px;
-    font-size: 1.25rem;
-    color: white;
-    background-color: blueviolet;
-  }
-  
-  #about-preview .body a button:hover{
-    cursor: pointer;
   }
   
   
@@ -190,7 +129,6 @@ main#home-page{
     justify-content:flex-start;
     align-items:center;
     overflow-x:scroll;
-    
   }
   
   #practice-preview .body ul li{
@@ -276,3 +214,72 @@ main#home-page{
     margin-top:5px;
   }
   
+  @media screen and (max-width: 1024px){
+    .header h2{
+      font-size:2.5em;
+    }
+
+    #todd-img{
+      height: 350px;
+      width: 275px;
+      margin-left: 50px
+    }
+
+    #about-preview .body p{
+      margin-top: 50px;
+      font-size: 1.2rem;
+      margin-right: 25px
+    }
+
+    .backstory-container{
+      margin-top:25px;
+    }
+
+  }
+
+  @media screen and (max-width: 800px) {
+    #about-preview .body{
+      border-left: none;
+    }
+
+    #todd-img{
+      height: 300px;
+      width: 225px;
+      margin-left: 25px
+    }
+
+    #about-preview .body p{
+      margin-top: 75px;
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    #todd-img{
+      height: 200px;
+      width: 150px;
+      border:10px solid hsl(345, 6%, 13%, .7);;
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+
+    #about-preview .body p{
+      font-size: .9rem;
+      margin-top: 0;
+    }
+
+    #about-preview .body{
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 550px;
+    }
+  
+    .backstory-container{
+      width: 100%;
+      height: 200px;
+    }
+
+    #about-preview{
+      height: 600px;
+    }
+  }

@@ -3,7 +3,7 @@
   main#contact-page{
     display:grid;
     grid-template: 1fr/ 2fr 1fr;
-    min-height: 550px;
+    height: 550px;
   }
   
   .contact-box{
@@ -113,44 +113,26 @@
     text-decoration:none !important;
     }
   
-  /* .feedback-box{
-    grid-column: 1 / span 1;
-    background-color:#AEAEAE;
-    width: 75%;
-    height: 80%;
-  }
   
-  .feedback-box h2{
-    color:#AEAEAE;
-    background-color:#231f20;
-    text-align:center;
-    font-size: 1.75rem;
-    padding-left:10px;
-    margin-top:0;
-    margin:0;
-  }
-  
-  .feedback-box .body{
-    height: 100px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
-  
-  .feedback-box form{
-    display:flex;
-    margin-top:30px;
-    height: 110px;
-  }
-  
-  .feedback-box input{
-    margin-bottom:10px;
-  }
-  
-  .feedback-box form, input, textarea{
-    display: inline-block;
-  }
-  
-  .feedback-box input #submit-button{
-    margin-bottom: 10px;
-  } */
+
+    @media screen and (max-width: 1024px){
+
+      .contact-box figure figcaption{
+        font-size: 2.25rem;
+      }
+
+      .contact-box figure a img, #phone-number img{
+        height: 75px;
+        width: 75px;
+      }
+
+      main#contact-page{
+        height: 400px;
+      }
+    }
+
+    @media screen and (max-width: 800px){
+      .contact-box figure figcaption{
+        font-size: 2rem;
+      }
+    }

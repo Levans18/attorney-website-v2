@@ -6,34 +6,20 @@ header.banner{
     background-color: #231f20;
     border-bottom: solid 10px  #8E793E;
   }
-  
-  header img{
-    height:80px;
-    width:80px;
-    align-self:center;
-  }
 
   #TWE-Logo{
-    width: 450px;
+    width: 400px;
+    height:90px;
+    align-self:center;
   }
 
   .header-hero{
     display: flex;
   }
   
-  header .navbar-link-home{
-    align-self:center;
-    color: #d4a352;
-    font-weight: bold;
-    font-size: 40px;
-    justify-self: start;
-    text-decoration:none;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  }
-  
   header nav{
     margin-right: 20px;
-    width: 600px;
+    width: 400px;
     justify-self:start;
     align-self:end;
   }
@@ -73,3 +59,54 @@ header.banner{
     transition: transform 0.3s;
   }
 
+  @media screen and (max-width: 1024px){
+  #TWE-Logo{
+    height: 70px;
+    width: 350px;
+  }
+
+  nav li{
+    font-size: 1rem;
+  }
+
+  header nav{
+    width: 350px;
+  }
+  }
+
+  @media screen and (max-width: 800px){
+    #TWE-Logo{
+      height: 60px;
+      width: 275px;
+    }
+
+    header.banner{
+      height: 70px;
+      border-bottom: 5px solid #8E793E;
+    }
+
+    nav li{
+      font-size: .9rem;
+    }
+
+    header nav{
+      width: 300px;
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    #TWE-Logo{
+      height: 50px;
+      width: 250px;
+    }
+
+    nav li{
+      font-size: .7rem;
+      text-align:center;
+    }
+
+    header nav{
+      width: 150px;
+    }
+  }

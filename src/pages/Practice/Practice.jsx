@@ -41,20 +41,17 @@ function Practice() {
             </section>
             <section className="right">
                 <h2>Direct Email</h2>
-                <br/>
                 <form action="mailto:twevans@neo.rr.com"
                     method="POST"
                     enctype="multipart/form-data"
                     name="EmailForm">
                     Name:
-                <input type="text" size="19" name="Contact-Name"/><br/><br/>
+                <input  className="top-input"type="text" size="19" name="Contact-Name"/><br/><br/>
                     Email:
                 <input type="email" name="Contact-Email"/><br/><br/>
                 Message
-                <br/>
                 <textarea name="Contact-Message" rows="7" cols="30">
                 </textarea>
-                <br/>
                 <AwesomeButton value="Submit">Send</AwesomeButton>
                 </form> 
              </section>

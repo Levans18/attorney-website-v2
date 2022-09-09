@@ -43,3 +43,17 @@
   .default-nav{
     margin: 5px;
   }
+
+  .slide-text{
+    margin: 20px
+  }
+
+  @media screen and (max-width: 600px) {
+    .each-slide-effect > div {
+      height: 250px;
+    }
+
+    .each-slide-effect span {
+      font-size: 3rem;
+    }
+  }

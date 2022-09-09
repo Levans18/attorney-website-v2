@@ -11,17 +11,17 @@ const SlideShow = () => {
             <Slide>
                 <div className="each-slide-effect">
                     <div id="first-slide">
-                        <span>Commited to Your Cause</span>
+                        <span className="slide-text">Commited to Your Cause</span>
                     </div>
                 </div>
                 <div className="each-slide-effect">
                     <div id="second-slide">
-                        <span>Over 25 Years of Experience</span>
+                        <span className="slide-text">Over 25 Years of Experience</span>
                     </div>
                 </div>
                 <div className="each-slide-effect">
                     <div id="third-slide">
-                        <span>Aggresive Representation</span>
+                        <span className="slide-text">Aggresive Representation</span>
                     </div>
                 </div>
             </Slide>

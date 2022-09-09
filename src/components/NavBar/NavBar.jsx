@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <header className="banner">
       <div className="header-hero">
-        <img src={require("./images/Header-Hero.png")} id="TWE-Logo"/>   
+        <Logo id="TWE-Logo"/>
       </div>  
       <nav>
         <ul>

@@ -9,10 +9,10 @@ ul.practice-areas{
   border-top:#AEAEAE 10px solid;
   display: flex;
   justify-content: center;
+  overflow-x:scroll;
   margin:0;
   padding:0;
   flex-direction: row;
-  width: 100%;
 }
 
 li.practice-areas{
@@ -55,6 +55,7 @@ section.left{
 section.right{
   display: flex;
   flex-direction: column;
+  margin-left: 2.5%;
   width: 30%;
   height: 90%;
   border: 1px solid black;
@@ -83,14 +84,25 @@ div .practice-container{
   width: 120px
 }
 
-textarea{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; 
-}
-
 input{
+  width: 60%;
   margin-left: 2px;
 }
 
+.top-input{
+  margin-top: 30px
+}
 
+textarea{
+  width: 85%;
+}
+
+@media screen and (max-width: 1024px) {
+  li.practice-areas{
+    font-size: 1rem;
+  }
+
+  ul.practice-areas{
+    justify-content: flex-start;
+  }
+}

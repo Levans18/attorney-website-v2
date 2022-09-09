@@ -5,33 +5,34 @@ import {NavLink} from "react-router-dom";
 function Footer() {
   return (
     <footer>
-        <ul className="footer-practice-areas">
-            <h3>
-                Practice Areas
-            </h3>
-            <li className="practice-area">
-                <NavLink className="footer-practice-link" to={"practice/Divorce-Dissolution"} activeclassname="active footer-practice-link">Divorce & Dissolution</NavLink>
-            </li>
-            <li className="practice-area">
-                <NavLink className="footer-practice-link" to={"practice/Family-Law"} activeclassname="active footer-practice-link">Family Law</NavLink>
-            </li>
-            <li className="practice-area">
-                <NavLink className="footer-practice-link" to={"practice/Landlord-Tenant"} activeclassname="active footer-practice-link">Landlord & Tenant</NavLink>
-            </li>
-            <li className="practice-area">
-                <NavLink className="footer-practice-link" to={"practice/Discrimination"} activeclassname="active footer-practice-link">Discrimination</NavLink>
-            </li>
-            <li className="practice-area">
-                <NavLink className="footer-practice-link" to={"practice/Sexual-Harrassment"} activeclassname="active footer-practice-link">Sexual Harrassment</NavLink>
-            </li>
-            <li className="practice-area">
-                <NavLink className="footer-practice-link" to={"practice/Personal-Injury"} activeclassname="active footer-practice-link">Personal Injury</NavLink>
-            </li>
-            <li className="practice-area">
-                <NavLink className="footer-practice-link" to={"practice/Unemployment-Appeals"} activeclassname="active footer-practice-link">Unemployment Appeals</NavLink>
-            </li>
+        <div className="left-container">
+            <ul className="footer-practice-areas">
+                <h3>
+                    Practice Areas
+                </h3>
+                <li className="practice-area">
+                    <NavLink className="footer-practice-link" to={"practice/Divorce-Dissolution"} activeclassname="active footer-practice-link">Divorce & Dissolution</NavLink>
+                </li>
+                <li className="practice-area">
+                    <NavLink className="footer-practice-link" to={"practice/Family-Law"} activeclassname="active footer-practice-link">Family Law</NavLink>
+                </li>
+                <li className="practice-area">
+                    <NavLink className="footer-practice-link" to={"practice/Landlord-Tenant"} activeclassname="active footer-practice-link">Landlord & Tenant</NavLink>
+                </li>
+                <li className="practice-area">
+                    <NavLink className="footer-practice-link" to={"practice/Discrimination"} activeclassname="active footer-practice-link">Discrimination</NavLink>
+                </li>
+                <li className="practice-area">
+                    <NavLink className="footer-practice-link" to={"practice/Sexual-Harrassment"} activeclassname="active footer-practice-link">Sexual Harrassment</NavLink>
+                </li>
+                <li className="practice-area">
+                    <NavLink className="footer-practice-link" to={"practice/Personal-Injury"} activeclassname="active footer-practice-link">Personal Injury</NavLink>
+                </li>
+                <li className="practice-area">
+                    <NavLink className="footer-practice-link" to={"practice/Unemployment-Appeals"} activeclassname="active footer-practice-link">Unemployment Appeals</NavLink>
+                </li>
 
-        </ul>
+            </ul>
         <ul className="footer-contact-info">
             <h3>Contact</h3>
             <li>
@@ -62,6 +63,7 @@ function Footer() {
                 </NavLink>
             </li>
         </ul> 
+        </div>
         <ul className="footer-location-info">
             <h3>Location</h3>
             <li>
