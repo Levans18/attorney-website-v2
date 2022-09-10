@@ -67,6 +67,7 @@ header.banner{
 
   nav li{
     font-size: 1rem;
+    vertical-align:center;
   }
 
   header nav{
@@ -107,6 +108,35 @@ header.banner{
     }
 
     header nav{
+      width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 460px){
+    #TWE-Logo{
+      width: 200px;
+    }
+
+    header.banner{
+      height: 60px;
+    }
+
+    header nav{
       width: 150px;
+      margin-right: 50px;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    #TWE-Logo{
+      width: 175px;
+    }
+
+    nav li{
+      font-size: .58rem;
+      text-align:center;
+    }
+    header nav{
+      width: 100px;
     }
   }

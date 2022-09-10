@@ -1,8 +1,13 @@
 import React from "react";
 import './Footer.css'
 import {NavLink} from "react-router-dom";
+import { AwesomeButtonSocial } from 'react-awesome-button'
+import "react-awesome-button/dist/styles.css";
 
 function Footer() {
+    function HandlePhone(){
+        let ele = document.getElementById("phone-icon-link");
+    }
   return (
     <footer>
         <div className="left-container">
@@ -36,13 +41,13 @@ function Footer() {
         <ul className="footer-contact-info">
             <h3>Contact</h3>
             <li>
-                <a href="" className="footer-contact-link">Email</a>
+                <a href="Contact.html" className="footer-contact-link">Email</a>
             </li>
             <li>
                 <a href="Contact.html" className="footer-contact-link">Facebook</a>
             </li>
             <li>
-                <a>330-430-9300</a>
+                <a href="Contact.html">330-430-9300</a>
             </li>
         </ul>
         <ul className="footer-pages">
@@ -67,11 +72,21 @@ function Footer() {
         <ul className="footer-location-info">
             <h3>Location</h3>
             <li>
-                <img src={require("./images/Stark-County.png")} />
+                <img src={require("./images/Stark-County.png")} alt="law-building"/>
             </li>
             <p>
                 Serving Stark and surrounding counties.
             </p>
+        </ul>
+        <ul className="small-footer">
+            <div className="actual-links">
+                <AwesomeButtonSocial type="facebook" url="https://www.facebook.com/twelaw329/" icon="true"></AwesomeButtonSocial>
+                <AwesomeButtonSocial type="whatsapp" icon="true" onClick={HandlePhone()} id="phone-icon-link"></AwesomeButtonSocial>
+            </div>
+            <div className="shameless-plug">
+                <AwesomeButtonSocial type="github" url="https://github.com/Levans18/"></AwesomeButtonSocial>
+            </div>
+
         </ul>
     </footer>
   );

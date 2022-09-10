@@ -14,6 +14,7 @@
   }
 
   #todd-img{
+    margin-bottom: 50px;
     height: 400px;
     width: 325px;
     border: 25px solid hsl(345, 6%, 13%, .7);
@@ -25,11 +26,10 @@
 
   .backstory-container{
     width: 60%;
-    margin-top: 50px;
     height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: 20px;
   }
 
@@ -37,8 +37,8 @@
     padding-right: 20px;
     width: 100%;
     display:flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content:center;
   }
 
   .img-container{
@@ -259,13 +259,16 @@
       height: 200px;
       width: 150px;
       border:10px solid hsl(345, 6%, 13%, .7);;
-      margin-left: 0px;
-      margin-top: 20px;
+      margin-left: 0;
+      margin-bottom: 0;
     }
 
     #about-preview .body p{
       font-size: .9rem;
-      margin-top: 0;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: auto;
     }
 
     #about-preview .body{
@@ -276,10 +279,26 @@
   
     .backstory-container{
       width: 100%;
-      height: 200px;
+      height: 425px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .backstory-button-container{
+      margin-bottom: auto;
     }
 
     #about-preview{
-      height: 600px;
+      height: 700px;
+    }
+
+    #about-preview .body{
+      height: 650px;
+    }
+
+    .img-container{
+      height: 250px;
     }
   }
