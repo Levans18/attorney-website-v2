@@ -81,7 +81,7 @@ function Footer() {
                 <AwesomeButtonSocial type="whatsapp" id="phone-icon-link"></AwesomeButtonSocial>
             </div>
             <div className="shameless-plug">
-                <a href="https://github.com/levans18/" target="_blank"><AwesomeButtonSocial type="github"></AwesomeButtonSocial></a>
+                <a href="https://github.com/levans18/" target="_blank" rel="noreferrer"><AwesomeButtonSocial type="github"></AwesomeButtonSocial></a>
             </div>
 
         </ul>
