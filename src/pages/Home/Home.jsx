@@ -1,7 +1,7 @@
 import React from "react";
 import './Home.css';
 import SlideShow from "../../components/SlideShow/SlideShow";
-import {Link} from "react-router-dom";
+import {Link,NavLink} from "react-router-dom";
 import {AwesomeButton} from "react-awesome-button";
 import { AwesomeButtonSocial } from 'react-awesome-button'
 import "react-awesome-button/dist/styles.css";
@@ -24,7 +24,9 @@ function Home() {
                     <div className="backstory-button-container">
                         <AwesomeButtonSocial type="facebook" url="https://www.facebook.com/twelaw329/">twelaw329</AwesomeButtonSocial>
                         <AwesomeButtonSocial type="whatsapp">330-430-9300</AwesomeButtonSocial>
-                        <AwesomeButton id="contact-page-button">Contact Page</AwesomeButton>
+                        <NavLink to="/contact" activeclassname="active">
+                            <AwesomeButton id="contact-page-button">Contact Page</AwesomeButton>
+                        </NavLink>
                     </div>
                 </div>
             </div>

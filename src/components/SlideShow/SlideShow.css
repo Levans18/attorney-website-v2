@@ -60,4 +60,8 @@
     .each-slide-effect span {
       font-size: 3rem;
     }
+
+    .Bottom-Border{
+      border-bottom: 5px solid #8E793E;
+    }
   }

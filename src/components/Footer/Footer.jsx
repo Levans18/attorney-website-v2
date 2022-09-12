@@ -38,13 +38,13 @@ function Footer() {
         <ul className="footer-contact-info">
             <h3>Contact</h3>
             <li>
-                <a href="Contact.html" className="footer-contact-link">Email</a>
+            <a href="mailto:twevans@neo.rr.com" className="footer-contact-link">Email</a>
             </li>
             <li>
-                <a href="Contact.html" className="footer-contact-link">Facebook</a>
+            <a href="https://www.facebook.com/twelaw329/" target="_blank" rel="noreferrer" className="footer-contact-link">Facebook</a>
             </li>
             <li>
-                <a href="Contact.html" className="footer-contact-link">330-430-9300</a>
+                <NavLink to="/contact" activeclassname="active" className="footer-contact-link">330-430-9300</NavLink>
             </li>
         </ul>
         <ul className="footer-pages">
