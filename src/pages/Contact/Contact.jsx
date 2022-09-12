@@ -17,9 +17,8 @@ function Contact() {
           <a href="https://www.facebook.com/twelaw329/" target="_blank" rel="noreferrer"><img src={require("./images/facebook-icon.png")} title="Email Icon" alt="Email Icon" /></a>
           <a href="https://www.facebook.com/twelaw329/" target="_blank" rel="noreferrer"><figcaption>@twelaw329</figcaption></a>
         </figure>
-        </div>
-          <aside className="law-image">
-        </aside>
+      </div>
+      <aside className="law-image"></aside>
     </main>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { ReactComponent as Logo} from "./images/Header-Hero.svg";
+import { ReactComponent as Logo} from "./images/Todd-Evans-Logo.svg";
 import './NavBar.css';
 
 function NavBar() {

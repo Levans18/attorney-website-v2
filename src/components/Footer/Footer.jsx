@@ -5,9 +5,6 @@ import { AwesomeButtonSocial } from 'react-awesome-button'
 import "react-awesome-button/dist/styles.css";
 
 function Footer() {
-    function HandlePhone(){
-        let ele = document.getElementById("phone-icon-link");
-    }
   return (
     <footer>
         <div className="left-container">
@@ -47,7 +44,7 @@ function Footer() {
                 <a href="Contact.html" className="footer-contact-link">Facebook</a>
             </li>
             <li>
-                <a href="Contact.html">330-430-9300</a>
+                <a href="Contact.html" className="footer-contact-link">330-430-9300</a>
             </li>
         </ul>
         <ul className="footer-pages">
@@ -80,11 +77,11 @@ function Footer() {
         </ul>
         <ul className="small-footer">
             <div className="actual-links">
-                <AwesomeButtonSocial type="facebook" url="https://www.facebook.com/twelaw329/" icon="true"></AwesomeButtonSocial>
-                <AwesomeButtonSocial type="whatsapp" icon="true" onClick={HandlePhone()} id="phone-icon-link"></AwesomeButtonSocial>
+                <AwesomeButtonSocial type="facebook" url="https://www.facebook.com/twelaw329/"></AwesomeButtonSocial>
+                <AwesomeButtonSocial type="whatsapp" id="phone-icon-link"></AwesomeButtonSocial>
             </div>
             <div className="shameless-plug">
-                <AwesomeButtonSocial type="github" url="https://github.com/Levans18/"></AwesomeButtonSocial>
+                <a href="https://github.com/levans18/"><AwesomeButtonSocial type="github"></AwesomeButtonSocial></a>
             </div>
 
         </ul>
