@@ -11,6 +11,10 @@
     background-size: cover;
     height: 500px;
   }
+
+  button svg{
+    margin-left: 6px;
+  }
   
   .each-slide-effect span {
     padding: 5px;
