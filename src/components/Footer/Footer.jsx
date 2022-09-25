@@ -4,10 +4,16 @@ import {NavLink} from "react-router-dom";
 import { AwesomeButtonSocial } from 'react-awesome-button'
 import "react-awesome-button/dist/styles.css";
 
+/*
+ Footer split up into a LARGE 
+ FOOTER and SMALL FOOTER for smartphones
+ */
+
 function Footer() {
   return (
     <footer>
         <div className="left-container">
+            {/* Practice Areas Section*/}  
             <ul className="footer-practice-areas">
                 <h3>
                     Practice Areas
@@ -35,37 +41,41 @@ function Footer() {
                 </li>
 
             </ul>
-        <ul className="footer-contact-info">
-            <h3>Contact</h3>
-            <li>
-            <a href="mailto:twevans@neo.rr.com" className="footer-contact-link">Email</a>
-            </li>
-            <li>
-            <a href="https://www.facebook.com/twelaw329/" target="_blank" rel="noreferrer" className="footer-contact-link">Facebook</a>
-            </li>
-            <li>
-                <NavLink to="/contact" activeclassname="active" className="footer-contact-link">330-430-9300</NavLink>
-            </li>
-        </ul>
-        <ul className="footer-pages">
-            <h3>Pages</h3>
-            <li>
-                <NavLink className="footer-page-link" to="/" activeclassname="active">
-                    Home
-                </NavLink>
-            </li>
-            <li>
-                <NavLink className="footer-page-link practice-areas" to="/practice" activeclassname="active">
-                    Practice Areas
-                </NavLink>
-            </li>
-            <li>
-                <NavLink className="footer-page-link contact" to="/contact" activeclassname="active">
-                    Contact
-                </NavLink>
-            </li>
-        </ul> 
+            {/* Contact Info Section*/}  
+            <ul className="footer-contact-info">
+                <h3>Contact</h3>
+                <li>
+                <a href="mailto:twevans@neo.rr.com" className="footer-contact-link">Email</a>
+                </li>
+                <li>
+                <a href="https://www.facebook.com/twelaw329/" target="_blank" rel="noreferrer" className="footer-contact-link">Facebook</a>
+                </li>
+                <li>
+                    <NavLink to="/contact" activeclassname="active" className="footer-contact-link">330-430-9300</NavLink>
+                </li>
+            </ul>
+            {/*Pages Section*/}  
+            <ul className="footer-pages">
+                <h3>Pages</h3>
+                <li>
+                    <NavLink className="footer-page-link" to="/" activeclassname="active">
+                        Home
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className="footer-page-link practice-areas" to="/practice" activeclassname="active">
+                        Practice Areas
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className="footer-page-link contact" to="/contact" activeclassname="active">
+                        Contact
+                    </NavLink>
+                </li>
+            </ul> 
         </div>
+
+        {/* Location Info Section*/}  
         <ul className="footer-location-info">
             <h3>Location</h3>
             <li>
@@ -75,6 +85,7 @@ function Footer() {
                 Serving Stark and surrounding counties.
             </p>
         </ul>
+        {/* Small Footer Section :: Not visible until Smartphone size*/}  
         <ul className="small-footer">
             <div className="actual-links">
                 <AwesomeButtonSocial type="facebook" url="https://www.facebook.com/twelaw329/"></AwesomeButtonSocial>

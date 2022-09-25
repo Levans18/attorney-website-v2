@@ -17,6 +17,13 @@ import PersonalInjury from "./pages/Practice/PracticeAreas/PersonalInjury"
 import UnemploymentAppeals from "./pages/Practice/PracticeAreas/UnemploymentAppeals"
 
 
+/*
+  Site split into 3 pages
+    Home - introduction to Todd-Evans and a preview to other pages
+    Practice - or practice areas to give context on Todd's experience
+    Contact - includes contact information 
+*/
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Router className="grid">
